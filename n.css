@@ -1,0 +1,16 @@
+.home_img1{
+  width: 200px;
+  border-radius: 10px;
+  height: 200px;
+}
+.home_img2{
+  width: 200px;
+  object-fit: cover;
+  height: 200px;
+}
+.home_img3{
+  border-radius: 100px;
+  width: 200px;
+  object-fit: cover;
+  height: 200px;
+}
