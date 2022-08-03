@@ -5,10 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "outfit", sans-serif;
   background-color: hsl(203, 50%, 14%);
 }
+
 .container {
   display: flex;
   text-align: center;
@@ -18,30 +20,65 @@ body {
   margin-left: 10rem;
   margin-top: 5rem;
 }
+
 .e_component {
-  background-color: hsl(200, 80%, 15%);
+  background-color: hsl(201, 37%, 55%);
   border-radius: 10px;
   padding: 20px;
   height: 75%;
   width: 25%;
 }
+
 .e_img {
   border-radius: 10px;
-  object-fit: cover;
   height: 55%;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.img {
-  border-radius: 10px;
+
+.e_img > img{
   object-fit: cover;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
+
+
+
+.e_img>  .light_blue {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.e_img:hover>  .light_blue{
+  opacity: 1;
+}
+
 .heading {
   color: white;
   text-align: left;
   font-weight: bold;
+  cursor: pointer;
 }
+
+.heading:hover {
+  color: aqua;
+}
+
+.heading:active {
+  opacity: .6;
+}
+
 .paragraph {
   color: hsl(201, 88%, 33%);
   text-align: left;
@@ -54,16 +91,20 @@ body {
   justify-content: space-between;
   margin-top: 20px;
 }
-.sideways_text > .ETH {
+
+.sideways_text>.ETH {
   color: aqua;
 }
-.sideways_text > .days {
+
+.sideways_text>.days {
   color: rgb(19, 75, 88);
 }
+
 .status_img {
   display: flex;
   margin-top: 10px;
 }
+
 .img2 {
   border-radius: 50px;
   height: 50px;
@@ -71,8 +112,22 @@ body {
   border-style: solid;
   border-color: aqua;
 }
+
 .last_text {
   margin-top: 13px;
   color: antiquewhite;
   margin-left: 20px;
+}
+
+.name {
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: aqua;
+}
+
+.name:active {
+  opacity: .6;
 }
