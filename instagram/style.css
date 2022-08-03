@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+body{
+  font-family: roboto, sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.navbar{
+  height: 70px;
+  width: 100vw;
+  border: 3px solid red;
+  display: flex;
+  align-items: center;
+  padding: 0px 2rem;
+}
+.content_wrapper{
+  display: flex;
+  border: 3px solid green;
+  height: calc(100vh - 70px);
+  padding: 2rem 5rem;
+}
+.left_content{
+  border: 3px solid blue;
+  flex: 1;
+  margin-right: 2rem;
+}
+.story_container{
+  height: 120px;
+  width: 100%;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0px 6px;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+.story_container > .story{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.story_container > .story > span{
+  margin-top: 10px;
+}
+.story_container > .story > .story_img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid pink;
+  padding: 1px 1px;
+}
+.story_container > .story > .story_img > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.right_content{
+  border: 3px solid yellow;
+  flex: 1;
+}
